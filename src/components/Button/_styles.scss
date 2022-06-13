@@ -1,0 +1,30 @@
+@import "./src/styles/variables";
+
+.btn {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+
+  border: $btn-border-width solid transparent;
+  font-weight: $btn-font-weight;
+  font-size: $btn-font-size;
+  line-height: $btn-line-height;
+  color: $body-color;
+  box-shadow: $btn-box-shadow;
+  padding: $btn-padding-y $btn-padding-x;
+  border-radius: $btn-border-radius;
+  transition: $btn-transition;
+
+  &.disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: $btn-disabled-opacity;
+    box-shadow: none;
+    > * {
+      pointer-events: none;
+    }
+  }
+}
