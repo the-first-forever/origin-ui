@@ -1,6 +1,6 @@
 import './styles/index.scss'
 import styles from './test.module.scss'
-import Button, {ButtonType} from "./components/Button";
+import Button, {ButtonSize, ButtonType} from "./components/Button";
 
 function App() {
   return (
