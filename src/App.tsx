@@ -1,10 +1,14 @@
 import './styles/index.scss'
-import Button, { ButtonType } from "./components/Button";
+import styles from './test.module.scss'
+import Button, {ButtonSize, ButtonType} from "./components/Button";
 
 function App() {
   return (
-    <div>
-      <Button btnType={ButtonType.Danger} disabled href='www.baidu.com'>hello origin</Button>
+    <div className={styles.wrap}>
+      <Button btnType={ButtonType.Primary} href='www.baidu.com'>hello origin</Button>
+      <Button btnType={ButtonType.Danger} href='www.baidu.com'>hello origin</Button>
+      <Button btnType={ButtonType.Link} href='www.baidu.com'>hello origin</Button>
+      <Button btnType={ButtonType.Default} href='www.baidu.com'>hello origin</Button>
     </div>
   )
 }
