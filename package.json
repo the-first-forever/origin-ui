@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "adddep": "pnpm i && cd docs && pnpm i",
+    "cleardep": "rm -rf node_modules && cd docs && rm -rf node_modules",
     "dev": "vite --port=4600",
     "build": "tsc && vite build",
     "preview": "vite preview",
