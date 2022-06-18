@@ -1,9 +1,9 @@
 import {FC, memo} from 'react'
 import classnames from 'classnames'
 
-import {BaseButtonProps, ButtonType} from './types'
+import {ButtonProps, ButtonType} from './types'
 
-const Button: FC<BaseButtonProps> = (props) => {
+const Button: FC<ButtonProps> = (props) => {
   const { btnType, disabled, size, children, href } = props
 
   const classes = classnames('btn', {

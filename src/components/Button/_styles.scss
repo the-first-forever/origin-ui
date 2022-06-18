@@ -16,6 +16,11 @@
   @include button-size($btn-padding-x, $btn-padding-y, $btn-font-size, $border-radius);
   transition: $btn-transition;
 
+  &:focus {
+    // 获取焦点后，不展示边框
+    outline: none;
+  }
+
   // button 禁用态
   &.disabled,
   &[disabled] {
@@ -42,5 +47,29 @@
 
   &.btn-danger {
     @include button-style($danger, $danger, $white)
+  }
+  &.btn-default {
+    @include button-style($white, $gray-400, $body-color, $white, $primary, $primary)
+  }
+}
+
+.btn-link {
+  font-weight: $font-weight-normal;
+  color: $btn-link-color;
+  text-decoration: $link-decoration;
+  box-shadow: none;
+  &:hover {
+    color: $btn-link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+  &:focus,
+  &.focus {
+    text-decoration: $link-hover-decoration;
+    box-shadow: none;
+  }
+  &.disabled,
+  &:disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
   }
 }
