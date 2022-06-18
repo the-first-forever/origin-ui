@@ -1,0 +1,15 @@
+{
+  "defaultLocale": "zh",
+  "locales": [
+    "zh"
+  ],
+  "currentLocale": "zh",
+  "localeConfigs": {
+    "zh": {
+      "label": "中文",
+      "direction": "ltr",
+      "htmlLang": "zh",
+      "calendar": "gregory"
+    }
+  }
+}
