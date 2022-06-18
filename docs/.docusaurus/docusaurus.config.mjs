@@ -64,7 +64,7 @@ export default {
           "items": [
             {
               "label": "Tutorial",
-              "to": "/123/intro"
+              "to": "/docs/intro"
             }
           ]
         },
